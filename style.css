@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4c0505; /* Bordó sólido, profundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    width: 90%;
+    max-width: 550px;
+    background-color: #f1f5f9; /* Gris pastel sólido */
+    border-radius: 12px;
+    padding: 40px;
+    /* La sombra es lo que le da el toque "fancy", no el color */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+}
+
+h1 {
+    color: #1e293b;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: #64748b; /* Gris medio para bajar la intensidad */
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.selector ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lang-option {
+    background-color: #ffffff; /* Blanco puro para destacar del gris */
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.lang-option:hover {
+    border-color: #4c0505; /* El color del fondo se vuelve el borde */
+    transform: translateY(-2px);
+}
+
+.lang-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+}
+.lang-link:active{
+    color: #000000;
+}
+
+/* El truco de las banderas */
+.flag-wrapper {
+    width: 32px; /* Tamaño consistente */
+    height: 22px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    margin-right: 0.5rem;
+}
+
+.flag-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bandera híbrida: cada imagen ocupa el 50% */
+.flag-wrapper.hybrid img {
+    width: 50%;
+}

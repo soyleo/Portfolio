@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4c0505; /* Bordó sólido, profundo */
+    font-family: 'Inter', sans-serif;
+}
+.hero{
+    color: aliceblue;
+    background: linear-gradient(#1a0000,#4c0505);
+    text-align: center;
+    padding: 1rem;
+}
+.navigation{
+    position: sticky;
+    top: 0;
+    background-color: #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    z-index: 1000;
+    padding: 0.1rem;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.nav-item{
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: bold;
+}
+#inicio,#acerca-de-mi,#exp-profesional,#proyectos,#contacto{
+    scroll-margin-top: 30vh;
+}
+h2{
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+.section{
+    text-align: center;
+    background-color: #d3d1d14f;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem
+}
+.bio-card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+    padding: 0.1rem;
+}
+.card{
+    background-color: #e2e8f0;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+.bio-text{
+    text-align: left;
+    text-indent: 0.75rem;
+}
+p{
+    margin-bottom: 0.75rem;
+}
+.highlight ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.highlight{
+    height: 100%;
+}
+.card-exp{
+    background-color: aliceblue;
+}
+.margin-bonus{
+    margin-bottom: 1.5rem;
+}
+hr{
+    border: none;
+    height: 2px;
+    border-radius: 0.25rem;
+    background-color: #1a0000;
+}
+.card-divider{
+    background-color: rgb(61, 20, 20);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

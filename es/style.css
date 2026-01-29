@@ -39,9 +39,18 @@ body{
     gap: 0.5rem;
 }
 .nav-item{
+    display: inline-block;
     text-decoration: none;
     color: #1e293b;
     font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+.nav-item:hover{
+    color: #4c0505;
+    transform: scale(1.065);
+}
+.nav-item span{
+    color: rgba(68, 66, 66, 0.315);
 }
 #inicio,#acerca-de-mi,#exp-profesional,#proyectos,#contacto{
     scroll-margin-top: 30vh;
@@ -86,8 +95,12 @@ p{
 .highlight{
     height: 100%;
 }
-.card-exp{
-    background-color: #ddeaf8;
+.card-exp h3, .card-exp h4{
+    margin-bottom: 0.5rem;
+}
+.card-exp span{
+    font-style: italic;
+    width: 100%;
 }
 .margin-bonus{
     margin-bottom: 1.5rem;
@@ -110,4 +123,5 @@ hr{
 .img-project{
     width: 100%;
     height: auto;
+    border-radius: 0.3rem;
 }

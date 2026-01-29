@@ -61,9 +61,10 @@ h2{
     padding: 0.1rem;
 }
 .card{
-    background-color: #e2e8f0;
+    background-color: #ddeaf8;
     border-radius: 0.3rem;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 .bio-text{
     text-align: left;
@@ -83,7 +84,7 @@ p{
     height: 100%;
 }
 .card-exp{
-    background-color: aliceblue;
+    background-color: #ddeaf8;
 }
 .margin-bonus{
     margin-bottom: 1.5rem;
@@ -98,4 +99,8 @@ hr{
     background-color: rgb(61, 20, 20);
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.project-subtitle{
+    color: aliceblue;
+    margin-bottom: 0.5rem;
 }

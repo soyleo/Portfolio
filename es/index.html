@@ -34,7 +34,7 @@
         <h3>Senior Game Designer & Web Developer</h3>
     </header>
 
-    <body>
+    <main>
         <nav class="navigation">
             <ul class="nav-list">
                 <li><a class="nav-item" href="#inicio"><span>|</span> Inicios <span>|</span></a></li>
@@ -235,21 +235,31 @@
                 </div>
                 <h3 class="project-subtitle">Proyectos Independientes</h3>
                 <div>
-                    <article class="card">
+                    <article class="card project-card">
                         <span>2025-2026</span>
                         <h4>WebPets</h4>
-                        <img class="img-project" src="../IMG/projects/WebPet.png" alt="WebPet Pantalla Principal">
+                        <div class="carousel pc">
+                            <div class="carousel-track">
+                                <img class="img-project fade-in" src="../IMG/projects/WebPet2.png" alt="WebPet Seleccion de Idioma" loading="lazy" onload="this.classList.add('loaded')">
+                                <img class="img-project fade-in" src="../IMG/projects/WebPet.png" alt="WebPet Pantalla Principal" loading="lazy" onload="this.classList.add('loaded')">
+                                <img class="img-project fade-in" src="../IMG/projects/WebPet3.png" alt="WebPet MatchMaking" loading="lazy" onload="this.classList.add('loaded')">
+                                <img class="img-project fade-in" src="../IMG/projects/WebPet4.png" alt="WebPet Pantalla de Pelea" loading="lazy" onload="this.classList.add('loaded')">
+                            </div>
+                            
+                            <div class="carousel-pagination"></div>
+                        </div>
+                        
                         <h5>Proyecto independiente</h5>
                         <p></p>
                         <p></p>
                         <div class="buttons-web">
                             <a href="https://soyleo.github.io/Webpet/"><button>Probar</button></a>
                             <span>Repositorio Front:</span>
-                            <a href="https://github.com/soyleo/Webpet"><img
+                            <a class="github-button" href="https://github.com/soyleo/Webpet"><img
                                     src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
                                     alt="GitHub"></a>
                             <span>Repositorio Back:</span>
-                            <a href="https://github.com/soyleo/Back_Webpet"><img
+                            <a class="github-button" href="https://github.com/soyleo/Back_Webpet"><img
                                     src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
                                     alt="GitHub Back"></a>
                         </div>
@@ -283,8 +293,9 @@
         <section class="section" id="Contacto">
             <h2>Contacto</h2>
         </section>
-    </body>
+    </main>
     <footer></footer>
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>

@@ -125,7 +125,6 @@ hr{
 }
 .img-project{
     width: 100%;
-    height: auto;
     border-radius: 0.3rem;
 }
 .buttons-mobile{
@@ -139,8 +138,74 @@ hr{
     height: 3rem;
     width: auto;
 }
+.buttons-web{
+    display: flex;
+    flex-direction: column;
+}
 .card-project{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.github-button img{
+    width: clamp(50px, 25%, 150px);
+    height: auto;
+    margin-top: 0.5rem;
+}
+.pc{
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: clamp(200px, 100%, 600px);
+}
+.carousel{
+    position: relative; 
+    width: 100%;
+    overflow: hidden; 
+    background-color: #e0e0e0;
+    border-radius: 0.3rem;
+}
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    will-change: transform;
+}
+.fade-in {
+    min-width: 100%; 
+    width: 100%;     
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    display: block; 
+}
+
+.fade-in.loaded {
+     opacity: 1; 
+}
+.carousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #fff;
+    width: 18px;
+    border-radius: 4px;
 }

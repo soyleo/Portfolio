@@ -78,6 +78,9 @@ h2{
     padding: 1rem;
     margin-bottom: 1rem;
 }
+.card h4, .card h5{
+    margin-bottom: 1rem;
+}
 .bio-text{
     text-align: left;
     text-indent: 0.75rem;
@@ -124,4 +127,20 @@ hr{
     width: 100%;
     height: auto;
     border-radius: 0.3rem;
+}
+.buttons-mobile{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    width: clamp(200px, 100%, 400px);
+}
+.buttons-mobile a img{
+    height: 3rem;
+    width: auto;
+}
+.card-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

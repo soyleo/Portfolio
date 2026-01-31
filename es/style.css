@@ -129,13 +129,14 @@ hr{
 }
 .buttons-mobile{
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: space-around;
     margin-top: 0.5rem;
     width: clamp(200px, 100%, 400px);
 }
 .buttons-mobile a img{
-    height: 3rem;
+    height: clamp(2rem, 8vw, 3rem);
     width: auto;
 }
 .buttons-web{
@@ -208,4 +209,9 @@ hr{
     background: #fff;
     width: 18px;
     border-radius: 4px;
+}
+.mobile{
+    position: relative;
+    aspect-ratio: 166/296;
+    width: clamp(50px, 100%, 150px);
 }

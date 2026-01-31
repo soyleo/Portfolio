@@ -215,3 +215,35 @@ hr{
     aspect-ratio: 166/296;
     width: clamp(50px, 100%, 150px);
 }
+a{
+    text-decoration: none;
+}
+.test-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background: #4c0505; 
+    color: #ffffff;
+    border: 2px solid #ffffff; 
+    border-radius: 0.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.test-button:hover {
+    background-color: #ffffff;
+    color: #4c0505;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.test-button:active {
+    transform: translateY(-1px);
+}

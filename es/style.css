@@ -247,3 +247,7 @@ a{
 .test-button:active {
     transform: translateY(-1px);
 }
+
+.project-card ul{
+    margin-bottom: 1rem;
+}

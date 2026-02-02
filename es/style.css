@@ -251,3 +251,61 @@ a{
 .project-card ul{
     margin-bottom: 1rem;
 }
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 0.5rem;
+}
+
+.contact-form div:nth-last-child(2),
+.contact-form button {
+  grid-column: 1 / -1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+small{
+    font-style: italic;
+    color: #1e293b;
+}
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.social-button{
+    font-size: clamp(1.5rem, 16vw, 3rem);
+    background-color: #ffffff; 
+    border: 2px solid #999ea5;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+.social-button:hover {
+    border-color: #4c0505;
+    transform: translateY(-2px);
+}
+.social-button .fa-linkedin{
+    color: #0a66c2;
+}
+.social-button .fa-github{
+    color: #171515;
+}
+.social-button .fa-whatsapp{
+    color: #25d366;
+}
+.social-links-footer a{
+    color: black;
+}
+.small{
+    font-size: 1rem;
+}

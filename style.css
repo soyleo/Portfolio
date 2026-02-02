@@ -7,7 +7,7 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: #4c0505; /* Bordó sólido, profundo */
+    background-color: #4c0505; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,11 +23,10 @@ main {
 .banner {
     width: 90%;
     max-width: 550px;
-    background-color: #f1f5f9; /* Gris pastel sólido */
+    background-color: #f1f5f9; 
     border-radius: 12px;
     padding: 40px;
     transition: box-shadow 0.3s ease;
-    /* La sombra es lo que le da el toque "fancy", no el color */
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); 
     text-align: center;
 }
@@ -46,7 +45,7 @@ h1 {
 }
 
 h2 {
-    color: #64748b; /* Gris medio para bajar la intensidad */
+    color: #64748b; 
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -60,7 +59,7 @@ h2 {
 }
 
 .lang-option {
-    background-color: #ffffff; /* Blanco puro para destacar del gris */
+    background-color: #ffffff; 
     border: 2px solid #e2e8f0;
     border-radius: 8px;
     transition: all 0.2s ease;
@@ -87,8 +86,6 @@ h2 {
 .lang-link span {
     margin-left: 10px;
 }
-
-/* Optimización para móviles */
 @media (max-width: 480px) {
     .banner {
         padding: 30px 20px;
@@ -99,9 +96,8 @@ h2 {
     }
 }
 
-/* El truco de las banderas */
 .flag-wrapper {
-    width: 32px; /* Tamaño consistente */
+    width: 32px; 
     height: 22px;
     display: flex;
     overflow: hidden;
@@ -116,7 +112,6 @@ h2 {
     object-fit: cover;
 }
 
-/* Bandera híbrida: cada imagen ocupa el 50% */
 .flag-wrapper.hybrid img {
     width: 50%;
 }

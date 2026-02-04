@@ -10,7 +10,7 @@ body{
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: #4c0505; /* Bordó sólido, profundo */
+    background-color: #4c0505;
     font-family: 'Inter', sans-serif;
 }
 .hero{
@@ -52,8 +52,8 @@ body{
 .nav-item span{
     color: rgba(68, 66, 66, 0.315);
 }
-#inicio,#acerca-de-mi,#exp-profesional,#proyectos,#contacto{
-    scroll-margin-top: 30vh;
+#inicio,#acerca-de-mi,#exp-profesional,#proyectos,#contacto,#home,#about-me,#professional-exp,#projects,#contact{
+    scroll-margin-top: 10vh;
 }
 h2{
     color: aliceblue;

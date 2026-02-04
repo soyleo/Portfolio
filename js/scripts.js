@@ -49,5 +49,54 @@ const setupPortfolioCarousels = () => {
         card.onmouseleave = () => startAutoplay();
     });
 };
+function filterSelection(category, element) {
+    // 1. Filtrado de Cards (Estado Real)
+    // Definimos qué elementos existen para el motor de búsqueda
+    const allCards = document.querySelectorAll('.card');
+    allCards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+
+    // 2. Segmentación por contenedores (#professional, #amateur y #exp-profesional)
+    // Aplicamos tu lógica de indexación local por cada bloque independiente
+    const containers = document.querySelectorAll('#exp-profesional, #professional, #amateur');
+
+    containers.forEach(container => {
+        // A. Ocultar todos los divisores del contenedor antes de re-evaluar
+        const dividers = container.querySelectorAll('.card-divider');
+        dividers.forEach(hr => hr.classList.add('hidden'));
+
+        // B. Indexar solo las cards que quedaron visibles en ESTE contenedor específico
+        const visibleCards = Array.from(container.querySelectorAll('.card:not(.hidden)'));
+
+        // C. Tu Regla: "Si es el primer elemento no requiere hr arriba, de lo contrario requiere uno"
+        visibleCards.forEach((card, index) => {
+            // Saltamos el índice 0 (la primera card visible del bloque nunca lleva HR arriba)
+            if (index > 0) {
+                // Buscamos el HR que está físicamente antes de esta card en el HTML
+                let prev = card.previousElementSibling;
+                while (prev) {
+                    if (prev.classList.contains('card-divider')) {
+                        prev.classList.remove('hidden');
+                        break; 
+                    }
+                    // Si encontramos otra card antes que un HR, significa que no hay separador entre ellas
+                    if (prev.classList.contains('card')) break;
+                    prev = prev.previousElementSibling;
+                }
+            }
+        });
+    });
+
+    
+
+    // 4. Feedback Visual del Filtro
+    document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+    element.classList.add('active');
+}
 
 document.addEventListener('DOMContentLoaded', setupPortfolioCarousels);

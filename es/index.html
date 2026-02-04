@@ -49,7 +49,7 @@
         </nav>
         <section class="section">
             <h2>Descarga mi CV</h2>
-            <article class="card">
+            <article class="card-permanent">
                 <div class="selector">
                     <a class="lang-link lang-option" href="">
                         <div class="flag-wrapper hybrid">
@@ -69,15 +69,15 @@
         </section>
         <section class="section">
             <h2>Elije el perfil a explorar</h2>
-            <article class="card">
+            <article class="card-permanent">
                 <div class="selector">
-                    <button class="filter-button" href="">
+                    <button class="filter-button active" onclick="filterSelection('all', this)">
                         <span><i class="fa fa-person"></i> Completo</span>
                     </button>
-                    <button class="filter-button" href="">
+                    <button class="filter-button" onclick="filterSelection('filter-gd', this)">
                         <span><i class="fa fa-dice"></i> Game Designer</span>
                     </button>
-                    <button class="filter-button" href="">
+                    <button class="filter-button web" onclick="filterSelection('filter-web', this)">
                         <span><i class="fa fa-computer"></i> Web Developer</span>
                     </button>
                 </div>
@@ -86,7 +86,7 @@
         <section class="section" id="acerca-de-mi">
             <h2>Acerca de mí</h2>
             <div class="bio-card">
-                <div class="card bio-text">
+                <div class="card-permanent bio-text">
                     <p>
                         Mi trayectoria se define por una palabra: <strong>impacto</strong>. Desde mis inicios en el
                         teatro musical y la alfabetización digital, noté que el éxito de cualquier sistema depende de la
@@ -113,7 +113,7 @@
                         escalabilidad son la prioridad.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card-permanent">
                     <h3>Datos Destacados</h3>
                     <div class="highlight">
                         <ul>
@@ -132,7 +132,7 @@
         <section class="section" id="exp-profesional">
             <h2>Experiencia Profesional</h2>
             <div>
-                <article class="card card-exp">
+                <article class="card card-exp filter-gd">
                     <span>2023 - 2025</span>
                     <h3>Senior Game Designer</h3>
                     <h4>Trick Studio</h4>
@@ -141,7 +141,7 @@
                         clientes para buscar la mejor solución posible para cada desafío.
                     </p>
                 </article>
-                <article class="card card-exp">
+                <article class="card card-exp filter-gd">
                     <span>2021 - 2023</span>
                     <h3>Game Designer</h3>
                     <h4>Dedalord Games</h4>
@@ -151,7 +151,7 @@
                         Shooters, puzzles físicos, CCG, etc.
                     </p>
                 </article>
-                <article class="card card-exp">
+                <article class="card card-exp filter-gd">
                     <span>2019 - 2020</span>
                     <h3>Profesor de Desarrollo de Videojuegos</h3>
                     <h4>Instituto Vinci</h4>
@@ -160,7 +160,7 @@
                         años.
                     </p>
                 </article>
-                <article class="card card-exp">
+                <article class="card card-exp filter-web">
                     <span>2019 - 2020</span>
                     <h3>User Experience Designer, Desarrollador front-end junior & Software Designer</h3>
                     <h4>Servicios Sociales San Juan</h4>
@@ -169,7 +169,7 @@
                         sistemas de comunicación y gestión para los clientes, para atraer y retener a los mismos.
                     </p>
                 </article>
-                <article class="card card-exp">
+                <article class="card card-exp filter-gd">
                     <span>2018 - 2019</span>
                     <h3>Profesor de Game Design</h3>
                     <h4>Ministerio de Producción de la Provincia de San Juan</h4>
@@ -178,7 +178,7 @@
                         emprendedores del área del desarrollo de Videojuegos.
                     </p>
                 </article>
-                <article class="card card-exp">
+                <article class="card card-exp filter-gd">
                     <span>2017 - 2018</span>
                     <h3>Game Designer y Project Manager</h3>
                     <h4>Tartas Games</h4>
@@ -188,7 +188,7 @@
                         publicación de ¡Combina & Mueve! hasta Circo Leap.
                     </p>
                 </article>
-                <article class="card card-exp">
+                <article class="card card-exp filter-gd">
                     <span>2015 - 2017</span>
                     <h3>Game Designer</h3>
                     <h4>Da Gamez Studio</h4>
@@ -197,7 +197,7 @@
                         proyectos desarrollados dentro de Game Jams.
                     </p>
                 </article>
-                <article class="card card-exp">
+                <article class="card card-exp filter-web">
                     <span>2013 - 2016</span>
                     <h3>Tallerista y capacitador en alfabetización digital</h3>
                     <h4>MeDHiMe</h4>
@@ -214,8 +214,8 @@
 
                 <h3 class="project-subtitle">Proyectos profesionales</h3>
 
-                <div>
-                    <article class="card project-card">
+                <div id="professional">
+                    <article class="card project-card filter-gd">
                         <span>2021 - 2022</span>
                         <h4>Disney's Maleficent Free Fall</h4>
                         <div class="carousel pc">
@@ -263,7 +263,7 @@
                         </div>
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2022</span>
                         <h4>Inside Out Thought Bubbles</h4>
                         <div class="carousel mobile">
@@ -305,7 +305,7 @@
                         </div>
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2022 - 2023</span>
                         <h4>Spellstone</h4>
                         <div class="carousel pc">
@@ -350,7 +350,7 @@
                         </div>
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2023</span>
                         <h4>Matchcreek Motors</h4>
                         <div class="carousel pc">
@@ -367,6 +367,7 @@
 
                             <div class="carousel-pagination"></div>
                         </div>
+                        <hr class="card-divider">
                         <h5>Dedalord Games / Hutch</h5>
                         <p>Match 3 clásico con metagame inspirado en la restauración de automóviles. Mi rol fue ser Lead
                             Level Designer a cargo de coordinar un equipo de 5 level designers e iterar tanto los
@@ -389,7 +390,7 @@
                             </a>
                         </div>
                     </article>
-                    <hr class="card-divider">
+                    <hr class="card-divider filter-gd">
                     <article class="card project-card">
                         <span>2024-2025</span>
                         <h4>GardenJoy</h4>
@@ -438,10 +439,23 @@
                             </a>
                         </div>
                     </article>
+                    <article class="card project-card filter-web">
+                        <span>2014-2020</span>
+                        <h4>Sistemas de Gestión Interna</h4>
+                        <h5>Servicios Sociales San Juan / MeDHiMe</h5>
+                        <p>Desarrollo de soluciones a medida para la optimización de procesos administrativos y gestión
+                            de afiliados. Foco en la arquitectura de datos y automatización de reportes internos.</p>
+                        <ul>
+                            <p>Key Stack:</p>
+                            <li>Arquitectura de soluciones web</li>
+                            <li>Optimización de bases de datos</li>
+                            <li>Automatización de flujos de trabajo</li>
+                        </ul>
+                    </article>
                 </div>
                 <h3 class="project-subtitle">Proyectos Independientes</h3>
-                <div>
-                    <article class="card project-card">
+                <div id="amateur">
+                    <article class="card project-card filter-gd filter-web">
                         <span>2025-2026</span>
                         <h4>WebPets</h4>
                         <div class="carousel pc">
@@ -491,7 +505,7 @@
                         </div>
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2017</span>
                         <h4>The Last Weirdo Standing</h4>
                         <div class="carousel pc">
@@ -525,7 +539,7 @@
                             href="https://v3.globalgamejam.org/2017/games/last-weirdo-standing">EXPLORAR PROYECTO</a>
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2016</span>
                         <h4>Costumbres Argentinas</h4>
                         <div class="carousel pc">
@@ -642,7 +656,7 @@
 
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd filter-web">
                         <span>2018</span>
                         <h4>The Mosquito's STING</h4>
                         <div class="carousel pc">
@@ -677,7 +691,7 @@
 
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-web">
                         <span>2016</span>
                         <h4>Kanto Pokedex</h4>
                         <div class="carousel pc">
@@ -711,7 +725,7 @@
 
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2017</span>
                         <h4>La Ola</h4>
                         <h5>Tartas Games</h5>
@@ -727,7 +741,7 @@
 
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2018</span>
                         <h4>Circo Leap</h4>
                         <h5>Tartas Games</h5>
@@ -742,7 +756,7 @@
 
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd">
                         <span>2017</span>
                         <h4>Pare y Aprenda</h4>
                         <h5>Tartas Games</h5>
@@ -758,7 +772,7 @@
 
                     </article>
                     <hr class="card-divider">
-                    <article class="card project-card">
+                    <article class="card project-card filter-gd filter-web">
                         <span>2016</span>
                         <h4>Laguna Enrojecida</h4>
                         <h5>Jam del Libro</h5>
@@ -778,7 +792,7 @@
         </section>
         <section class="section" id="contacto">
             <h2>Contacto</h2>
-            <div class="card">
+            <div class="card-permanent">
                 <h3>Formulario de contacto</h3>
                 <small>Los campos marcados con * son obligatorios</small>
                 <form class="contact-form" action="https://formsubmit.co/leopoldo230791@gmail.com" method="post">
@@ -799,7 +813,7 @@
                 </form>
             </div>
             <hr class="card-divider">
-            <div class="card">
+            <div class="card-permanent">
                 <h3>Redes</h3>
                 <div class="social-links">
                     <a class="social-button"

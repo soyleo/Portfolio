@@ -72,7 +72,7 @@ h2{
     gap: 0.5rem;
     padding: 0.1rem;
 }
-.card{
+.card, .card-permanent{
     background-color: #ddeaf8;
     border-radius: 0.3rem;
     padding: 1rem;
@@ -379,4 +379,12 @@ small{
 .filter-button:hover {
     border-color: #4c0505;
     transform: translateY(-2px);
+}
+.filter-button.active {
+    background-color: #4c0505 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.hidden {
+    display: none !important;
 }

@@ -309,3 +309,74 @@ small{
 .small{
     font-size: 1rem;
 }
+
+.lang-option {
+    background-color: #ffffff; 
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.lang-option:hover {
+    border-color: #4c0505;
+    transform: translateY(-2px);
+}
+
+.lang-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+}
+.lang-link:active{
+    color: #000000;
+}
+.lang-link span {
+    margin-left: 10px;
+}
+.flag-wrapper {
+    width: 32px; 
+    height: 22px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    margin-right: 0.5rem;
+}
+
+.flag-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flag-wrapper.hybrid img {
+    width: 50%;
+}
+.selector{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.filter-button{
+    display: inline-block;
+    font-size: clamp(1rem, 8vw, 1.25rem);
+    font-weight: bold;
+    color: #222222;
+    background-color: #ffffff; 
+    border: 2px solid #999ea5;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+.filter-button:hover {
+    border-color: #4c0505;
+    transform: translateY(-2px);
+}
